@@ -7,14 +7,14 @@
   \emph{Rationale:} 活性 3B の軽量 MoE が論文の最良行に届けば、h1 の lightning の部分を担う。
   \emph{Criterion:} \texttt{\detokenize{nemotron-3.5-lightning-small}}.\texttt{\detokenize{trajectory_smape}} $-$ 0.3212 $\leq 0$.
   \emph{Prediction:} $[-0.07, 0.18]$ (同条件の 27B〜35B の open-weight モデルは 0.248〜0.457（s3.p5、s3.p6）。活性 3B の軽量モデルはこの幅に収まると見る).
-  \emph{Observed:} pending.
-  \emph{Verdict:} pending.
+  \emph{Observed:} 0.257174.
+  \emph{Verdict:} refuted.
 \item[\textbf{Claim 2}] nemotron-3-ultra（nvidia/nemotron-3-ultra-550b-a55b）で SciGym-small 137 件を最大 20 反復で解かせたときの平均 STE は、論文 Table 1 の最良行（Gemini-2.5-Pro）の 0.3212 以下である。~\cite[s1.p5]{duan-2025-measuring}
   \emph{Rationale:} 活性 55B の大型 MoE が論文の最良行に届けば、h1 の ultra の部分を担う。
   \emph{Criterion:} \texttt{\detokenize{nemotron-3-ultra-small}}.\texttt{\detokenize{trajectory_smape}} $-$ 0.3212 $\leq 0$.
   \emph{Prediction:} $[-0.22, -0.02]$ (同条件の大型 open-weight MoE（kimi-k2.6、kimi-k3、deepseek-v4.1-flash）は 0.21〜0.24（s3.p2〜s3.p4）。ultra は同等かやや良いと見る).
-  \emph{Observed:} pending.
-  \emph{Verdict:} pending.
+  \emph{Observed:} -0.0376069.
+  \emph{Verdict:} supported.
 \end{enumerate}
 \noindent\emph{Assumed, so that the claims together imply Hypothesis 1:}
 \begin{itemize}
@@ -31,14 +31,14 @@
   \emph{Rationale:} 軽量モデルが大規模な系でも論文の最良行に届けば、h2 の lightning の部分を担う。
   \emph{Criterion:} \texttt{\detokenize{nemotron-3.5-lightning-large}}.\texttt{\detokenize{trajectory_smape}} $-$ 0.3212 $\leq 0$.
   \emph{Prediction:} $[0.03, 0.28]$ (large には先行値が無い。small での予測（0.25〜0.50）に、反応数の多い系での悪化を 0.1 程度見込む).
-  \emph{Observed:} pending.
-  \emph{Verdict:} pending.
+  \emph{Observed:} 0.275656.
+  \emph{Verdict:} refuted.
 \item[\textbf{Claim 4}] nemotron-3-ultra で SciGym-large 213 件を最大 20 反復で解かせたときの平均 STE は、論文 Table 1 の最良行（Gemini-2.5-Pro）の 0.3212 以下である。~\cite[s1.p5]{duan-2025-measuring}
   \emph{Rationale:} 大型モデルが大規模な系でも論文の最良行に届けば、h2 の ultra の部分を担う。
   \emph{Criterion:} \texttt{\detokenize{nemotron-3-ultra-large}}.\texttt{\detokenize{trajectory_smape}} $-$ 0.3212 $\leq 0$.
   \emph{Prediction:} $[-0.12, 0.13]$ (large には先行値が無い。small での予測（0.10〜0.30）に、反応数の多い系での悪化を 0.1 程度見込む).
-  \emph{Observed:} pending.
-  \emph{Verdict:} pending.
+  \emph{Observed:} 0.111574.
+  \emph{Verdict:} refuted.
 \end{enumerate}
 \noindent\emph{Assumed, so that the claims together imply Hypothesis 2:}
 \begin{itemize}
