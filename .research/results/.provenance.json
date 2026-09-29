@@ -1,0 +1,22 @@
+{
+  "dirs": {
+    "nemotron-3.5-lightning-small": {
+      "execution_id": "61fae25c-b9a9-42a2-babf-04d410fb23ec",
+      "backend": "seyval",
+      "commit_hash": "358d11549518d48bf65571c66ae1b2f90b52d73e",
+      "overrides": {
+        "run_id": "nemotron-3.5-lightning-small",
+        "mode": "full",
+        "airas_eval_tasks": "scigym_small"
+      },
+      "parameters": {},
+      "files": {
+        ".research/results/nemotron-3.5-lightning-small/eval_inputs/scigym_small.json.gz": "fabc970c9eb95c7d5cc9a49202e8e0a39e292768f4cca83d2a646b31f52bf2ac",
+        ".research/results/nemotron-3.5-lightning-small/evaluation/scigym_small.json": "06860b4a2d069faa687bc945088e6e472c26d8b618688318d76782d5b3e95f0a",
+        ".research/results/nemotron-3.5-lightning-small/instances.tar.gz": "3158dc9b0c4a047fbea6cb73b10d3d5605adf530ca8be2df1383318a411197ed",
+        ".research/results/nemotron-3.5-lightning-small/metrics.json": "5832144f69ca2b147aacd01674b83a8f2a7147260263fa4ef85fcb813e126a23",
+        ".research/results/nemotron-3.5-lightning-small/tokens.json": "9acec2d89d29ac8f0d6c67e0019be09a86b2e6ebc12b769e9bbc45866bb20455"
+      }
+    }
+  }
+}
