@@ -88,7 +88,7 @@ sanity は small の先頭 1 件を 2 反復で走らせて配管を確かめる
 
 \section{結果}
 \label{sec:results}
-表~\ref{tab:small} に small（137 件）、表~\ref{tab:large} に large（213 件）の各 run の平均 STE、論文 Table 1 の最良行 Gemini-2.5-Pro（\unverified{0.3212}）\cite[s1.p5]{duan-2025-measuring} との差、RMS の適合率・再現率・F1（modifier なし / あり）、有効な SBML が提出された件数、提出までの平均反復数、上限前に自ら提出した件数、文脈長を超えて提出に至らなかった件数を示す。各値は評価層 \texttt{scigym\_small} / \texttt{scigym\_large} のレポートと駆動部の集計から記録経由で流し込んだものである。平均反復数は会話履歴の往復数で、無効な提出のあとのデバッグ反復を含むため上限の 20 を超えることがある。
+表~\ref{tab:small} に small（137 件）、表~\ref{tab:large} に large（213 件）の各 run の平均 STE、論文 Table 1 の最良行 Gemini-2.5-Pro（\unverified{0.3212}）\cite[s1.p5]{duan-2025-measuring} との差、RMS の F1（modifier なし / あり）、有効な SBML が提出された件数、提出までの平均反復数、上限前に自ら提出した件数、文脈長を超えて提出に至らなかった件数を示す。適合率と再現率は記録にあり、表では省く。各値は評価層 \texttt{scigym\_small} / \texttt{scigym\_large} のレポートと駆動部の集計から記録経由で流し込んだものである。平均反復数は会話履歴の往復数で、無効な提出のあとのデバッグ反復を含むため上限の 20 を超えることがある。
 
 {\scriptsize\setlength{\tabcolsep}{2.5pt}\input{tables/small.tex}}
 
