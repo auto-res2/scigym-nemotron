@@ -125,8 +125,10 @@ def main():
             continue  # 文脈超過か、3 試行とも終わらなかった件: 提出無しとして評価層に渡す
         submitted[instance.name] = (out / "final_model.xml").read_text() if (out / "final_model.xml").exists() else None
         iterations.append(iterations_used(out))
-        for k, v in json.loads((out / "tokens.json").read_text()).items():
-            tokens[k] += v
+        # 提出の採点後のデバッグ反復で文脈超過した件は evaluation.json だけがあり tokens.json が無い（提出は採点する）
+        if (out / "tokens.json").exists():
+            for k, v in json.loads((out / "tokens.json").read_text()).items():
+                tokens[k] += v
     max_iterations = 2 if cfg.mode == "sanity" else cfg.max_iterations
     tokens |= {
         "mean_iterations": sum(iterations) / len(iterations) if iterations else 0.0,
