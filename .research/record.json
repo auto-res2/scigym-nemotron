@@ -167,6 +167,11 @@
               "text_sha256": "a96d2647fe17744093060eb16cd17cf4ed9e61486ebbbaf352c0b8aa9c5a1869",
               "model": "gpt-4.1",
               "supported": true
+            },
+            {
+              "text_sha256": "4f7e776d127994e40daccb5b7533eedbdedd1e75f85f768131a20b0df3da7acc",
+              "model": "gpt-4.1",
+              "supported": true
             }
           ]
         },
