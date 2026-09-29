@@ -64,6 +64,22 @@
               "text_sha256": "d398299627a6f0a15d43c238d7ea06cb835de6a1dc5644be1f97e4fbd7fd1bfb",
               "model": "gpt-4.1",
               "supported": true
+            },
+            {
+              "text_sha256": "56d149e6233457b055b4d12c4864fc0ff457ade8c48a31574daefe400e2ae9d9",
+              "model": "gpt-4.1",
+              "supported": true
+            },
+            {
+              "text_sha256": "f56829ded1f2708dbde085ec7f79fe65991bd69510b02e7c89b974e4ca8b3376",
+              "model": "gpt-4.1",
+              "supported": false,
+              "reason": "The original passage only states that the evaluation was restricted to 'small split' (137 tasks); the citing text describes an addition of the 'large split' (213 tasks), which the passage does not mention or support."
+            },
+            {
+              "text_sha256": "ad43c62138a7bf2a6a8beafe8a7211f442b560d423a6f1cbd7883aa9c0fc1af6",
+              "model": "gpt-4.1",
+              "supported": true
             }
           ]
         },
@@ -141,6 +157,11 @@
               "model": "gpt-4.1",
               "supported": true,
               "reason": "The citing text correctly reports the STE (0.6007) for GPT-4.1-mini as shown in the quoted table from the passage."
+            },
+            {
+              "text_sha256": "a96d2647fe17744093060eb16cd17cf4ed9e61486ebbbaf352c0b8aa9c5a1869",
+              "model": "gpt-4.1",
+              "supported": true
             }
           ]
         },
@@ -280,6 +301,12 @@
               "model": "gpt-4.1",
               "supported": true,
               "reason": "The citing text attributes the correct 'trajectory_smape' score to kimi-k2.6 as in the source passage; no conditions, context, or qualifiers are dropped or misrepresented."
+            },
+            {
+              "text_sha256": "7a3921d22b72ee95785db9c6c2e290173e532d337160cc890ed477bfe2af3fa0",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text attributes the number 0.2100 for kimi-k2.6's STE to the cited passage, which indeed reports 'trajectory_smape': 0.21004969535683385. This is a faithful paraphrase and supported by the source."
             }
           ]
         },
@@ -311,6 +338,12 @@
               "model": "gpt-4.1",
               "supported": true,
               "reason": "The cited text accurately presents the 'trajectory_smape' metric (0.2251...) as shown in the passage; no overstatement or misrepresentation."
+            },
+            {
+              "text_sha256": "3a9998d0ad45bd9fb0839c66baed163d1b90f2a09280189b3c9172a4997463e6",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text accurately reports that 'kimi-k3' had a trajectory_smape of 0.2251, matching the quoted value (rounded) from the source passage."
             }
           ]
         },
@@ -336,6 +369,12 @@
               "model": "gpt-4.1",
               "supported": true,
               "reason": "The citing text's score for deepseek-v4.1-flash (0.2405) matches the quoted passage (trajectory_smape = 0.240460...) and faithfully attributes it to this model; there is no misrepresentation or overstatement."
+            },
+            {
+              "text_sha256": "7766392083b1d0db28de78b9cafdf5c1973b1ce117108743ff9d9f2c3c2120c9",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The cited value for deepseek-v4.1-flash 'trajectory_smape' as 0.2405 is directly supported by the quoted passage's value 0.24046025032909796; this is a faithful (rounded) report."
             }
           ]
         },
@@ -361,6 +400,12 @@
               "model": "gpt-4.1",
               "supported": true,
               "reason": "The citing text reports the trajectory_smape value (0.2479) for qwen3.8-27b, which matches the quoted value in the source passage without exaggeration or misinterpretation."
+            },
+            {
+              "text_sha256": "06e3b398d7aba9272eda4c5bf3402a4e2e6230fbdabf8c2c54bd8021127c4685",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text accurately uses the value 0.2479 for qwen3.8-27b's average STE, which matches the quoted passage 'trajectory_smape': 0.2479343..., and the context confirms this is an output metric for that model."
             }
           ]
         },
@@ -386,6 +431,12 @@
               "model": "gpt-4.1",
               "supported": true,
               "reason": "The citing text uses the metric value (trajectory_smape = 0.4571) faithfully, comparing it with other models as reported in the source, and does not misrepresent it."
+            },
+            {
+              "text_sha256": "af3106d9c56ab4abb36e1a697e3bb0e7805a6d4d27c5e7dcb3d7aba06ed75bbf",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text uses the value 0.4571 for qwen3.6-35b's STE and attributes it to the cited source (trajectory_smape: 0.457088...), which is consistent with the cited passage given rounding."
             }
           ]
         }
