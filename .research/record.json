@@ -29,32 +29,138 @@
         {
           "id": "s1.p1",
           "node_type": "setup",
-          "quote": "We evaluated six models from three frontier model families, each represented by their professional and mini variants: Anthropic’s Claude-3.7-Sonnet-20250219 (P) and Claude-3.5-Haiku-20241022 (M); Google’s Gemini-2.5-Pro-Preview-03-25 (P) and Gemini-2.5-Flash-Preview-04-17 (M); and OpenAI’s GPT-4.1-2025-04-14 (P) and GPT-4.1-Mini-2025-04-14 (M)."
+          "quote": "We evaluated six models from three frontier model families, each represented by their professional and mini variants: Anthropic’s Claude-3.7-Sonnet-20250219 (P) and Claude-3.5-Haiku-20241022 (M); Google’s Gemini-2.5-Pro-Preview-03-25 (P) and Gemini-2.5-Flash-Preview-04-17 (M); and OpenAI’s GPT-4.1-2025-04-14 (P) and GPT-4.1-Mini-2025-04-14 (M).",
+          "judgments": [
+            {
+              "text_sha256": "09251f1f5c09646a8d0c5c8092ef97daccbad764125d86681b73e5d326970eb5",
+              "model": "gpt-4.1",
+              "supported": true
+            }
+          ]
         },
         {
           "id": "s1.p2",
           "node_type": "setup",
-          "quote": "Due to computational resource constraints, we restricted our evaluation to SCIGYM-small, with a total of 137 tasks."
+          "quote": "Due to computational resource constraints, we restricted our evaluation to SCIGYM-small, with a total of 137 tasks.",
+          "judgments": [
+            {
+              "text_sha256": "3b42086053755cd9fb920eed764d55588a49ed1c42cd112851b951ce4bc5a546",
+              "model": "gpt-4.1",
+              "supported": true
+            },
+            {
+              "text_sha256": "74970137b9b4f6c8041c25b11c552b99b9cfeede84ec63207369577403434fd7",
+              "model": "gpt-4.1",
+              "supported": false,
+              "reason": "The citing text states that 213 large split tasks were not evaluated due to resource constraints, but the cited passage only states evaluation was limited to SCIGYM-small's 137 tasks; the number 213 and 'large split' are not mentioned or supported."
+            },
+            {
+              "text_sha256": "8d234dbcbb3359124c29d72722c5dce9d39fecd6f8cd7626f56b676560e8b791",
+              "model": "gpt-4.1",
+              "supported": false,
+              "reason": "The cited passage says only the small split (137 tasks) was evaluated, not that a large split (213 entries) exists or is available; the citing text extrapolates this unstated information."
+            },
+            {
+              "text_sha256": "d398299627a6f0a15d43c238d7ea06cb835de6a1dc5644be1f97e4fbd7fd1bfb",
+              "model": "gpt-4.1",
+              "supported": true
+            }
+          ]
         },
         {
           "id": "s1.p3",
           "node_type": "setup",
-          "quote": "The agent may submit its final model and conclude the discovery process at any point, subject to a maximum iteration limit (20 in our benchmark)."
+          "quote": "The agent may submit its final model and conclude the discovery process at any point, subject to a maximum iteration limit (20 in our benchmark).",
+          "judgments": [
+            {
+              "text_sha256": "7749638f5f75ae723b5c0ff3a49757204ed0207982a8a2ee1466a9e2579f35cb",
+              "model": "gpt-4.1",
+              "supported": true
+            },
+            {
+              "text_sha256": "0bc6f1dd0b49cff38c7a83207a611df60ae5e4af7ed6153baf7ff930ac4c6b89",
+              "model": "gpt-4.1",
+              "supported": true
+            }
+          ]
         },
         {
           "id": "s1.p4",
           "node_type": "setup",
-          "quote": "If the submitted model is invalid or cannot be simulated, we allow for 3 additional debugging iterations"
+          "quote": "If the submitted model is invalid or cannot be simulated, we allow for 3 additional debugging iterations",
+          "judgments": [
+            {
+              "text_sha256": "7749638f5f75ae723b5c0ff3a49757204ed0207982a8a2ee1466a9e2579f35cb",
+              "model": "gpt-4.1",
+              "supported": true
+            },
+            {
+              "text_sha256": "0bc6f1dd0b49cff38c7a83207a611df60ae5e4af7ed6153baf7ff930ac4c6b89",
+              "model": "gpt-4.1",
+              "supported": true
+            },
+            {
+              "text_sha256": "c6aa77b697ef56d87b600507641112f7e8bb16e86664dfada1e638c70eb22501",
+              "model": "gpt-4.1",
+              "supported": true
+            }
+          ]
         },
         {
           "id": "s1.p5",
           "node_type": "result",
-          "quote": "Gemini-2.5-Flash 0.4181 0.1527 0.1071 0.1217 0.2399 0.1839 0.2005 GPT-4.1-mini 0.6007 0.1516 0.1253 0.1320 0.2530 0.2313 0.2322 Claude-3.5-Haiku 0.6281 0.0858 0.0421 0.0530 0.1454 0.0805 0.0987 Gemini-2.5-Pro 0.3212 0.2138 0.1664 0.1817 0.3781 0.3219 0.3383 GPT-4.1 0.4611 0.2067 0.1597 0.1740 0.3517 0.2888 0.3038 Claude-3.7-Sonnet 0.3615 0.1780 0.1698 0.1688 0.3160 0.3170 0.3047"
+          "quote": "Gemini-2.5-Flash 0.4181 0.1527 0.1071 0.1217 0.2399 0.1839 0.2005 GPT-4.1-mini 0.6007 0.1516 0.1253 0.1320 0.2530 0.2313 0.2322 Claude-3.5-Haiku 0.6281 0.0858 0.0421 0.0530 0.1454 0.0805 0.0987 Gemini-2.5-Pro 0.3212 0.2138 0.1664 0.1817 0.3781 0.3219 0.3383 GPT-4.1 0.4611 0.2067 0.1597 0.1740 0.3517 0.2888 0.3038 Claude-3.7-Sonnet 0.3615 0.1780 0.1698 0.1688 0.3160 0.3170 0.3047",
+          "judgments": [
+            {
+              "text_sha256": "1f68599379fb86af9b75fd619c64e9a9dba44b5923b333334d4c789dc03cd9f6",
+              "model": "gpt-4.1",
+              "supported": true
+            },
+            {
+              "text_sha256": "69144ec94685357a3519fac3738199c6e15ff02427fe803a2c318defec8d72f2",
+              "model": "gpt-4.1",
+              "supported": true
+            },
+            {
+              "text_sha256": "15c0dad8ee439cda107da19cad9c1fae594e610a3aa67c53393e2eff1a7963fa",
+              "model": "gpt-4.1",
+              "supported": true
+            },
+            {
+              "text_sha256": "8715bfca045f18bf122a04375b4ec7db4b60f0c013172a18cfd367abd1957fa6",
+              "model": "gpt-4.1",
+              "supported": true
+            },
+            {
+              "text_sha256": "b165a8537ca511798d8253e270f542c466d7df07812c614f40a85aa59979401c",
+              "model": "gpt-4.1",
+              "supported": true
+            },
+            {
+              "text_sha256": "094d6ed576f62d5e315cd73eec6d707f8f3cad3f64798d7f53d72ee0d1d5cc08",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text correctly reports the STE (0.6007) for GPT-4.1-mini as shown in the quoted table from the passage."
+            }
+          ]
         },
         {
           "id": "s1.p6",
           "node_type": "result",
-          "quote": "Table 1: Pro models outperform their mini counterparts in SCIGYM, with Gemini dominating in both size categories. We report the average Simulation Trajectory Error (STE) and Reaction Matching Score (RMS) across all benchmark instances."
+          "quote": "Table 1: Pro models outperform their mini counterparts in SCIGYM, with Gemini dominating in both size categories. We report the average Simulation Trajectory Error (STE) and Reaction Matching Score (RMS) across all benchmark instances.",
+          "judgments": [
+            {
+              "text_sha256": "3b42086053755cd9fb920eed764d55588a49ed1c42cd112851b951ce4bc5a546",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The cited passage states that Table 1 reports averages across all benchmark instances, which matches the citing text's description that Table 1 is based on the evaluation of 6 models over 137 SciGym-small instances."
+            },
+            {
+              "text_sha256": "d85e5ba80da363972d171f47aa1309b152db1f41d1a90e7e5acce66e93811ed8",
+              "model": "gpt-4.1",
+              "supported": true
+            }
+          ]
         }
       ]
     },
@@ -80,17 +186,38 @@
         {
           "id": "s2.p1",
           "node_type": "setup",
-          "quote": "temperature: 1.0"
+          "quote": "temperature: 1.0",
+          "judgments": [
+            {
+              "text_sha256": "0bc6f1dd0b49cff38c7a83207a611df60ae5e4af7ed6153baf7ff930ac4c6b89",
+              "model": "gpt-4.1",
+              "supported": true
+            }
+          ]
         },
         {
           "id": "s2.p2",
           "node_type": "setup",
-          "quote": "max_iterations: 5"
+          "quote": "max_iterations: 5",
+          "judgments": [
+            {
+              "text_sha256": "0bc6f1dd0b49cff38c7a83207a611df60ae5e4af7ed6153baf7ff930ac4c6b89",
+              "model": "gpt-4.1",
+              "supported": true
+            }
+          ]
         },
         {
           "id": "s2.p3",
           "node_type": "setup",
-          "quote": "eval_debug_rounds: 5"
+          "quote": "eval_debug_rounds: 5",
+          "judgments": [
+            {
+              "text_sha256": "0bc6f1dd0b49cff38c7a83207a611df60ae5e4af7ed6153baf7ff930ac4c6b89",
+              "model": "gpt-4.1",
+              "supported": true
+            }
+          ]
         }
       ]
     },
@@ -116,32 +243,151 @@
         {
           "id": "s3.p1",
           "node_type": "claim",
-          "quote": "RIKYU の推論 API（OpenAI 互換）で提供される open-weight モデル 6 種（deepseek-v4.1-flash、glm-5.2、kimi-k2.6、kimi-k3、qwen3.6-35b、qwen3.8-27b）は、SciGym 公開コードの Controller をそのまま用いて SciGym-small 137 件を最大 20 反復で解かせたとき、いずれも平均 Simulation Trajectory Error（STE）が論文 Table 1 の GPT-4.1-mini（0.6007）の水準に届く（0.05 より大きくは上回らない）。"
+          "quote": "RIKYU の推論 API（OpenAI 互換）で提供される open-weight モデル 6 種（deepseek-v4.1-flash、glm-5.2、kimi-k2.6、kimi-k3、qwen3.6-35b、qwen3.8-27b）は、SciGym 公開コードの Controller をそのまま用いて SciGym-small 137 件を最大 20 反復で解かせたとき、いずれも平均 Simulation Trajectory Error（STE）が論文 Table 1 の GPT-4.1-mini（0.6007）の水準に届く（0.05 より大きくは上回らない）。",
+          "judgments": [
+            {
+              "text_sha256": "09251f1f5c09646a8d0c5c8092ef97daccbad764125d86681b73e5d326970eb5",
+              "model": "gpt-4.1",
+              "supported": true
+            }
+          ]
         },
         {
           "id": "s3.p2",
           "node_type": "result",
-          "quote": "\"trajectory_smape\": 0.21004969535683385"
+          "quote": "\"trajectory_smape\": 0.21004969535683385",
+          "judgments": [
+            {
+              "text_sha256": "09251f1f5c09646a8d0c5c8092ef97daccbad764125d86681b73e5d326970eb5",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text accurately reports the value of kimi-k2.6's average STE (0.2100) as given by 'trajectory_smape': 0.2100496 in the source passage, rounded to four decimal places."
+            },
+            {
+              "text_sha256": "39b5a7bef495e143122d30d3cd1ea576b4a8115395db159b9729bc457b349689",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text gives the value 0.2100 (rounded) for kimi-k2.6 as 'trajectory_smape', which matches the quoted passage and context."
+            },
+            {
+              "text_sha256": "b4272436654e222c338e4edf7cbbff5d580a2f82eb4039ab3cb40fede68102db",
+              "model": "gpt-4.1",
+              "supported": false,
+              "reason": "The citing text summarizes a range (0.21–0.24) of STEs for large open-weight MoE models, but the quoted passage only provides a single trajectory_smape value (0.21005), not a range or data about multiple models. The generalization to a range is not supported by this singular value."
+            },
+            {
+              "text_sha256": "b165a8537ca511798d8253e270f542c466d7df07812c614f40a85aa59979401c",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text attributes the correct 'trajectory_smape' score to kimi-k2.6 as in the source passage; no conditions, context, or qualifiers are dropped or misrepresented."
+            }
+          ]
         },
         {
           "id": "s3.p3",
           "node_type": "result",
-          "quote": "\"trajectory_smape\": 0.22507247610652192"
+          "quote": "\"trajectory_smape\": 0.22507247610652192",
+          "judgments": [
+            {
+              "text_sha256": "09251f1f5c09646a8d0c5c8092ef97daccbad764125d86681b73e5d326970eb5",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text reports the 'trajectory_smape' for kimi-k3 as 0.2251, which is a faithful summary of the quoted value (0.22507247610652192), appropriately rounded."
+            },
+            {
+              "text_sha256": "39b5a7bef495e143122d30d3cd1ea576b4a8115395db159b9729bc457b349689",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text correctly gives the 'trajectory_smape' value from the quoted passage without overstatement or misrepresentation."
+            },
+            {
+              "text_sha256": "b4272436654e222c338e4edf7cbbff5d580a2f82eb4039ab3cb40fede68102db",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text uses the 'trajectory_smape' value of 0.225 from the source, which is directly shown in the quoted passage (0.22507247610652192). It provides this as the value for a given model and uses similar values from other passages to construct intervals. This is a faithful use of the cited value and does not overstate or generalize its meaning."
+            },
+            {
+              "text_sha256": "b165a8537ca511798d8253e270f542c466d7df07812c614f40a85aa59979401c",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The cited text accurately presents the 'trajectory_smape' metric (0.2251...) as shown in the passage; no overstatement or misrepresentation."
+            }
+          ]
         },
         {
           "id": "s3.p4",
           "node_type": "result",
-          "quote": "\"trajectory_smape\": 0.24046025032909796"
+          "quote": "\"trajectory_smape\": 0.24046025032909796",
+          "judgments": [
+            {
+              "text_sha256": "39b5a7bef495e143122d30d3cd1ea576b4a8115395db159b9729bc457b349689",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text accurately reports the 'trajectory_smape' score (0.2405 rounded from 0.24046025032909796) from the quoted passage for deepseek-v4.1-flash as a model evaluation result. No overstatement or generalization."
+            },
+            {
+              "text_sha256": "b4272436654e222c338e4edf7cbbff5d580a2f82eb4039ab3cb40fede68102db",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The cited value 0.24 for the ultra model's STE (trajectory_smape) is explicitly given in the source passage and used appropriately to build the described interval."
+            },
+            {
+              "text_sha256": "1068a6bc6b9d7b0af6b60c8572e02d3f56d5f077a10a848ec530b22ecbd7fbc5",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text's score for deepseek-v4.1-flash (0.2405) matches the quoted passage (trajectory_smape = 0.240460...) and faithfully attributes it to this model; there is no misrepresentation or overstatement."
+            }
+          ]
         },
         {
           "id": "s3.p5",
           "node_type": "result",
-          "quote": "\"trajectory_smape\": 0.24793430926739368"
+          "quote": "\"trajectory_smape\": 0.24793430926739368",
+          "judgments": [
+            {
+              "text_sha256": "39b5a7bef495e143122d30d3cd1ea576b4a8115395db159b9729bc457b349689",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text faithfully states the trajectory_smape value as given in the source (0.2479 for qwen3.8-27b), which matches the quoted passage and context."
+            },
+            {
+              "text_sha256": "b4272436654e222c338e4edf7cbbff5d580a2f82eb4039ab3cb40fede68102db",
+              "model": "gpt-4.1",
+              "supported": false,
+              "reason": "The citing text does not faithfully represent what the quoted passage supports: the passage gives the 'trajectory_smape' value (0.2479) for one model in some condition, but the citing text uses the number '0.25' (rounded) as a basis for demarcation and range choice among model classes and sizes, and implicitly treats it as a representative value for all 27B–35B models under 'lightning' conditions. The source context does not show that this value applies to all those model types, nor does it justify the set ranges based on just this number."
+            },
+            {
+              "text_sha256": "094d6ed576f62d5e315cd73eec6d707f8f3cad3f64798d7f53d72ee0d1d5cc08",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text reports the trajectory_smape value (0.2479) for qwen3.8-27b, which matches the quoted value in the source passage without exaggeration or misinterpretation."
+            }
+          ]
         },
         {
           "id": "s3.p6",
           "node_type": "result",
-          "quote": "\"trajectory_smape\": 0.4570888053620998"
+          "quote": "\"trajectory_smape\": 0.4570888053620998",
+          "judgments": [
+            {
+              "text_sha256": "39b5a7bef495e143122d30d3cd1ea576b4a8115395db159b9729bc457b349689",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text gives a value for 'trajectory_smape' matching the source for qwen3.6-35b (0.4571, rounded from 0.457088...), as claimed, with appropriate context."
+            },
+            {
+              "text_sha256": "b4272436654e222c338e4edf7cbbff5d580a2f82eb4039ab3cb40fede68102db",
+              "model": "gpt-4.1",
+              "supported": false,
+              "reason": "The citing text refers to a split between 0.25 and 0.46 for '27B〜35B 級', but the quoted passage provides only a single value (0.457...); there is no explicit evidence here of a set of models or a split at these values."
+            },
+            {
+              "text_sha256": "094d6ed576f62d5e315cd73eec6d707f8f3cad3f64798d7f53d72ee0d1d5cc08",
+              "model": "gpt-4.1",
+              "supported": true,
+              "reason": "The citing text uses the metric value (trajectory_smape = 0.4571) faithfully, comparing it with other models as reported in the source, and does not misrepresent it."
+            }
+          ]
         }
       ]
     }
