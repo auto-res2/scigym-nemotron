@@ -3,14 +3,14 @@
 % and fails on any difference, so manual edits always surface.
 \begin{table}[t]
 \centering
-\caption{SciGym-small 137 件、最大 20 反復。平均 STE（低いほど良い）、論文 Table 1 の最良行（Gemini-2.5-Pro、0.3212）との差、Reaction Matching Score の適合率 / 再現率 / F1（modifier なし・あり、高いほど良い）、有効な提出件数、提出までの平均反復数、上限前に自ら提出した件数、文脈長を超えて提出に至らなかった件数。}
+\caption{SciGym-small 137 件、最大 20 反復。平均 STE（低いほど良い）、論文 Table 1 の最良行（Gemini-2.5-Pro、0.3212）との差、Reaction Matching Score の F1（modifier なし・あり、高いほど良い）、有効な提出件数、提出までの平均反復数（デバッグ反復を含む）、上限前に自ら提出した件数、文脈長を超えて提出に至らなかった件数。適合率と再現率は記録にある。}
 \label{tab:small}
-\begin{tabular}{lrrrrrrrrrrrr}
+\begin{tabular}{lrrrrrrrr}
 \hline
- & STE $\downarrow$ & $\Delta$ vs Gemini-2.5-Pro & P & R & F1 & P$_m$ & R$_m$ & F1$_m$ & n\_valid & 平均反復 & 早期提出 & 文脈超過 \\
+ & STE $\downarrow$ & $\Delta$ vs Gemini-2.5-Pro & F1 & F1$_m$ & n\_valid & 平均反復 & 早期提出 & 文脈超過 \\
 \hline
-nemotron-3.5-lightning & \airasrecordlink[\#L548]{0.578} & \airasrecordlink[\#L548]{0.257} & \airasrecordlink[\#L538]{0.148} & \airasrecordlink[\#L540]{0.111} & \airasrecordlink[\#L535]{0.121} & \airasrecordlink[\#L539]{0.084} & \airasrecordlink[\#L541]{0.059} & \airasrecordlink[\#L537]{0.065} & \airasrecordlink[\#L551]{86} & \airasrecordlink[\#L554]{21.0} & \airasrecordlink[\#L555]{25} & \airasrecordlink[\#L556]{6} \\
-nemotron-3-ultra & \airasrecordlink[\#L658]{0.284} & \airasrecordlink[\#L658]{-0.038} & \airasrecordlink[\#L648]{0.431} & \airasrecordlink[\#L650]{0.431} & \airasrecordlink[\#L645]{0.421} & \airasrecordlink[\#L649]{0.249} & \airasrecordlink[\#L651]{0.233} & \airasrecordlink[\#L647]{0.235} & \airasrecordlink[\#L661]{135} & \airasrecordlink[\#L664]{18.4} & \airasrecordlink[\#L665]{50} & \airasrecordlink[\#L666]{0} \\
+nemotron-3.5-lightning & \airasrecordlink[\#L548]{0.578} & \airasrecordlink[\#L548]{0.257} & \airasrecordlink[\#L535]{0.121} & \airasrecordlink[\#L537]{0.065} & \airasrecordlink[\#L551]{86} & \airasrecordlink[\#L554]{21.0} & \airasrecordlink[\#L555]{25} & \airasrecordlink[\#L556]{6} \\
+nemotron-3-ultra & \airasrecordlink[\#L658]{0.284} & \airasrecordlink[\#L658]{-0.038} & \airasrecordlink[\#L645]{0.421} & \airasrecordlink[\#L647]{0.235} & \airasrecordlink[\#L661]{135} & \airasrecordlink[\#L664]{18.4} & \airasrecordlink[\#L665]{50} & \airasrecordlink[\#L666]{0} \\
 \hline
 \end{tabular}
 \end{table}
