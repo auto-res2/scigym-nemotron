@@ -182,11 +182,86 @@
                   "description": "nemotron-3.5-lightning で SciGym-small 137 件を 20 反復で実行",
                   "params": {
                     "mode": "full"
-                  }
+                  },
+                  "results": [
+                    {
+                      "id": "61fae25c-b9a9-42a2-babf-04d410fb23ec",
+                      "commit": "358d11549518d48bf65571c66ae1b2f90b52d73e",
+                      "eval_inputs": {
+                        "path": ".research/results/nemotron-3.5-lightning-small/eval_inputs/scigym_small.json.gz",
+                        "sha256": "fabc970c9eb95c7d5cc9a49202e8e0a39e292768f4cca83d2a646b31f52bf2ac"
+                      },
+                      "eval_report": {
+                        "task_type": "scigym_small",
+                        "task_signature": "scigym_small/v1@139c6084495c",
+                        "inputs_sha256": "2e83414088d8febb7cae79614094c1c1d9cbb14c8cabe8271e33b4ae758497b3",
+                        "versions": {
+                          "airas-eval": "0.13.1",
+                          "libroadrunner": "2.7.0",
+                          "python-libsbml": "5.20.4",
+                          "scigym": "0.0.1"
+                        },
+                        "metrics": {
+                          "reaction_f1": 0.12069337799264807,
+                          "reaction_f1_vs_best_published": -0.21760662200735192,
+                          "reaction_f1_with_modifiers": 0.06509305779378773,
+                          "reaction_precision": 0.14763642683350714,
+                          "reaction_precision_with_modifiers": 0.08400243309002434,
+                          "reaction_recall": 0.11067663074962346,
+                          "reaction_recall_with_modifiers": 0.05923415594948442,
+                          "topology_f1": 0.29387323800154946,
+                          "topology_f1_modifier_product": 0.0,
+                          "topology_f1_reactant_modifier": 0.0,
+                          "topology_f1_reactant_product": 0.1613103102203448,
+                          "topology_precision": 0.40709071949947867,
+                          "topology_recall": 0.2580377861511029,
+                          "trajectory_smape": 0.5783737311381445,
+                          "trajectory_smape_vs_best_published": 0.2571737311381445
+                        },
+                        "inputs_summary": {
+                          "n_instances": 137.0,
+                          "n_valid_submissions": 86.0
+                        },
+                        "skipped": {
+                          "missing_dependency": {},
+                          "missing_optional_input": [],
+                          "not_applicable": {},
+                          "undefined_on_data": {}
+                        }
+                      },
+                      "metrics": {
+                        "reaction_f1": 0.12069337799264807,
+                        "reaction_f1_vs_best_published": -0.21760662200735192,
+                        "reaction_f1_with_modifiers": 0.06509305779378773,
+                        "reaction_precision": 0.14763642683350714,
+                        "reaction_precision_with_modifiers": 0.08400243309002434,
+                        "reaction_recall": 0.11067663074962346,
+                        "reaction_recall_with_modifiers": 0.05923415594948442,
+                        "topology_f1": 0.29387323800154946,
+                        "topology_f1_modifier_product": 0.0,
+                        "topology_f1_reactant_modifier": 0.0,
+                        "topology_f1_reactant_product": 0.1613103102203448,
+                        "topology_precision": 0.40709071949947867,
+                        "topology_recall": 0.2580377861511029,
+                        "trajectory_smape": 0.5783737311381445,
+                        "trajectory_smape_vs_best_published": 0.2571737311381445,
+                        "n_instances": 137.0,
+                        "n_valid_submissions": 86.0,
+                        "input_tokens": 125562287,
+                        "output_tokens": 7928284,
+                        "mean_iterations": 21.0381679389313,
+                        "n_early_submit": 25,
+                        "n_context_overflow": 6,
+                        "n_not_finished": 6
+                      }
+                    }
+                  ]
                 }
               ]
             }
           ],
+          "verified": true,
+          "verdict": "refuted",
           "criterion": {
             "metric": "trajectory_smape",
             "subject": "nemotron-3.5-lightning-small",
@@ -217,11 +292,86 @@
                   "description": "nemotron-3-ultra で SciGym-small 137 件を 20 反復で実行",
                   "params": {
                     "mode": "full"
-                  }
+                  },
+                  "results": [
+                    {
+                      "id": "ffd25caa-4196-49a5-a974-f89d2d4b5c17",
+                      "commit": "d7468cd6f7dfe39230bab6096121c086d92149d5",
+                      "eval_inputs": {
+                        "path": ".research/results/nemotron-3-ultra-small/eval_inputs/scigym_small.json.gz",
+                        "sha256": "dd1512d6deac58666e9b0b23f388dc9630657fc5320c6da54b8e49c177ef2924"
+                      },
+                      "eval_report": {
+                        "task_type": "scigym_small",
+                        "task_signature": "scigym_small/v1@139c6084495c",
+                        "inputs_sha256": "1299c4ce588c8e697a51477011a5f16714948637df9c785dd2223786f8a57408",
+                        "versions": {
+                          "airas-eval": "0.13.1",
+                          "libroadrunner": "2.7.0",
+                          "python-libsbml": "5.20.4",
+                          "scigym": "0.0.1"
+                        },
+                        "metrics": {
+                          "reaction_f1": 0.4212339633872477,
+                          "reaction_f1_vs_best_published": 0.08293396338724773,
+                          "reaction_f1_with_modifiers": 0.23484347440234463,
+                          "reaction_precision": 0.43137237863515215,
+                          "reaction_precision_with_modifiers": 0.2494177963156065,
+                          "reaction_recall": 0.4310103116672459,
+                          "reaction_recall_with_modifiers": 0.23302919708029193,
+                          "topology_f1": 0.6041090971182695,
+                          "topology_f1_modifier_product": 0.06802684262968543,
+                          "topology_f1_reactant_modifier": 0.0552376443001443,
+                          "topology_f1_reactant_product": 0.38857121494322544,
+                          "topology_precision": 0.7127543685025438,
+                          "topology_recall": 0.5629031971578383,
+                          "trajectory_smape": 0.2835930949461249,
+                          "trajectory_smape_vs_best_published": -0.037606905053875095
+                        },
+                        "inputs_summary": {
+                          "n_instances": 137.0,
+                          "n_valid_submissions": 135.0
+                        },
+                        "skipped": {
+                          "missing_dependency": {},
+                          "missing_optional_input": [],
+                          "not_applicable": {},
+                          "undefined_on_data": {}
+                        }
+                      },
+                      "metrics": {
+                        "reaction_f1": 0.4212339633872477,
+                        "reaction_f1_vs_best_published": 0.08293396338724773,
+                        "reaction_f1_with_modifiers": 0.23484347440234463,
+                        "reaction_precision": 0.43137237863515215,
+                        "reaction_precision_with_modifiers": 0.2494177963156065,
+                        "reaction_recall": 0.4310103116672459,
+                        "reaction_recall_with_modifiers": 0.23302919708029193,
+                        "topology_f1": 0.6041090971182695,
+                        "topology_f1_modifier_product": 0.06802684262968543,
+                        "topology_f1_reactant_modifier": 0.0552376443001443,
+                        "topology_f1_reactant_product": 0.38857121494322544,
+                        "topology_precision": 0.7127543685025438,
+                        "topology_recall": 0.5629031971578383,
+                        "trajectory_smape": 0.2835930949461249,
+                        "trajectory_smape_vs_best_published": -0.037606905053875095,
+                        "n_instances": 137.0,
+                        "n_valid_submissions": 135.0,
+                        "input_tokens": 79284373,
+                        "output_tokens": 7343906,
+                        "mean_iterations": 18.364963503649633,
+                        "n_early_submit": 50,
+                        "n_context_overflow": 0,
+                        "n_not_finished": 0
+                      }
+                    }
+                  ]
                 }
               ]
             }
           ],
+          "verified": true,
+          "verdict": "supported",
           "criterion": {
             "metric": "trajectory_smape",
             "subject": "nemotron-3-ultra-small",
@@ -398,11 +548,82 @@
                   "description": "nemotron-3.5-lightning で SciGym-large 213 件を 20 反復で実行",
                   "params": {
                     "mode": "full"
-                  }
+                  },
+                  "results": [
+                    {
+                      "id": "5d75aa7b-0e86-42b2-bffc-cb8aef3b3138",
+                      "commit": "358d11549518d48bf65571c66ae1b2f90b52d73e",
+                      "eval_inputs": {
+                        "path": ".research/results/nemotron-3.5-lightning-large/eval_inputs/scigym_large.json.gz",
+                        "sha256": "f30471379481b314a025c0e5e835837a3033b27d1607bb2d59dbf776337e20fa"
+                      },
+                      "eval_report": {
+                        "task_type": "scigym_large",
+                        "task_signature": "scigym_large/v1@e2594567c496",
+                        "inputs_sha256": "cf4049f5b4f4cded9d2d781c94ef258217086bd459b9c43d4dedc2844bde06b0",
+                        "versions": {
+                          "airas-eval": "0.13.1",
+                          "libroadrunner": "2.7.0",
+                          "python-libsbml": "5.20.4",
+                          "scigym": "0.0.1"
+                        },
+                        "metrics": {
+                          "reaction_f1": 0.02958225400519802,
+                          "reaction_f1_with_modifiers": 0.019479478732510016,
+                          "reaction_precision": 0.06815714280503012,
+                          "reaction_precision_with_modifiers": 0.04562193153742449,
+                          "reaction_recall": 0.022127191916610667,
+                          "reaction_recall_with_modifiers": 0.014733542619301567,
+                          "topology_f1": 0.07941290639617565,
+                          "topology_f1_modifier_product": 0.0,
+                          "topology_f1_reactant_modifier": 0.0,
+                          "topology_f1_reactant_product": 0.03964464407705311,
+                          "topology_precision": 0.23074413594951682,
+                          "topology_recall": 0.05834729234361075,
+                          "trajectory_smape": 0.5968555210109178
+                        },
+                        "inputs_summary": {
+                          "n_instances": 213.0,
+                          "n_valid_submissions": 111.0
+                        },
+                        "skipped": {
+                          "missing_dependency": {},
+                          "missing_optional_input": [],
+                          "not_applicable": {},
+                          "undefined_on_data": {}
+                        }
+                      },
+                      "metrics": {
+                        "reaction_f1": 0.02958225400519802,
+                        "reaction_f1_with_modifiers": 0.019479478732510016,
+                        "reaction_precision": 0.06815714280503012,
+                        "reaction_precision_with_modifiers": 0.04562193153742449,
+                        "reaction_recall": 0.022127191916610667,
+                        "reaction_recall_with_modifiers": 0.014733542619301567,
+                        "topology_f1": 0.07941290639617565,
+                        "topology_f1_modifier_product": 0.0,
+                        "topology_f1_reactant_modifier": 0.0,
+                        "topology_f1_reactant_product": 0.03964464407705311,
+                        "topology_precision": 0.23074413594951682,
+                        "topology_recall": 0.05834729234361075,
+                        "trajectory_smape": 0.5968555210109178,
+                        "n_instances": 213.0,
+                        "n_valid_submissions": 111.0,
+                        "input_tokens": 254781663,
+                        "output_tokens": 10962576,
+                        "mean_iterations": 21.52513966480447,
+                        "n_early_submit": 24,
+                        "n_context_overflow": 34,
+                        "n_not_finished": 34
+                      }
+                    }
+                  ]
                 }
               ]
             }
           ],
+          "verified": true,
+          "verdict": "refuted",
           "criterion": {
             "metric": "trajectory_smape",
             "subject": "nemotron-3.5-lightning-large",
@@ -433,11 +654,82 @@
                   "description": "nemotron-3-ultra で SciGym-large 213 件を 20 反復で実行",
                   "params": {
                     "mode": "full"
-                  }
+                  },
+                  "results": [
+                    {
+                      "id": "e24e795e-3769-46ed-88e3-6da5f5d17cb8",
+                      "commit": "d7468cd6f7dfe39230bab6096121c086d92149d5",
+                      "eval_inputs": {
+                        "path": ".research/results/nemotron-3-ultra-large/eval_inputs/scigym_large.json.gz",
+                        "sha256": "3284c6ac0cf4b63ce28025042a57683c26ff3b8d509ea6bb23048229ea16424e"
+                      },
+                      "eval_report": {
+                        "task_type": "scigym_large",
+                        "task_signature": "scigym_large/v1@e2594567c496",
+                        "inputs_sha256": "891fd98f57d4b6c6b722b3a980986466abaa24bd06193665126141bf468a1258",
+                        "versions": {
+                          "airas-eval": "0.13.1",
+                          "libroadrunner": "2.7.0",
+                          "python-libsbml": "5.20.4",
+                          "scigym": "0.0.1"
+                        },
+                        "metrics": {
+                          "reaction_f1": 0.19678835842542008,
+                          "reaction_f1_with_modifiers": 0.1052853368353696,
+                          "reaction_precision": 0.23669340294965197,
+                          "reaction_precision_with_modifiers": 0.12705354011634984,
+                          "reaction_recall": 0.1935769775840013,
+                          "reaction_recall_with_modifiers": 0.10389311676890779,
+                          "topology_f1": 0.30648152020141795,
+                          "topology_f1_modifier_product": 0.01650979686262002,
+                          "topology_f1_reactant_modifier": 0.008595030686857894,
+                          "topology_f1_reactant_product": 0.18135820419076643,
+                          "topology_precision": 0.4701735090462871,
+                          "topology_recall": 0.29162058102649324,
+                          "trajectory_smape": 0.432774199958411
+                        },
+                        "inputs_summary": {
+                          "n_instances": 213.0,
+                          "n_valid_submissions": 190.0
+                        },
+                        "skipped": {
+                          "missing_dependency": {},
+                          "missing_optional_input": [],
+                          "not_applicable": {},
+                          "undefined_on_data": {}
+                        }
+                      },
+                      "metrics": {
+                        "reaction_f1": 0.19678835842542008,
+                        "reaction_f1_with_modifiers": 0.1052853368353696,
+                        "reaction_precision": 0.23669340294965197,
+                        "reaction_precision_with_modifiers": 0.12705354011634984,
+                        "reaction_recall": 0.1935769775840013,
+                        "reaction_recall_with_modifiers": 0.10389311676890779,
+                        "topology_f1": 0.30648152020141795,
+                        "topology_f1_modifier_product": 0.01650979686262002,
+                        "topology_f1_reactant_modifier": 0.008595030686857894,
+                        "topology_f1_reactant_product": 0.18135820419076643,
+                        "topology_precision": 0.4701735090462871,
+                        "topology_recall": 0.29162058102649324,
+                        "trajectory_smape": 0.432774199958411,
+                        "n_instances": 213.0,
+                        "n_valid_submissions": 190.0,
+                        "input_tokens": 226448624,
+                        "output_tokens": 11576415,
+                        "mean_iterations": 19.974489795918366,
+                        "n_early_submit": 38,
+                        "n_context_overflow": 17,
+                        "n_not_finished": 17
+                      }
+                    }
+                  ]
                 }
               ]
             }
           ],
+          "verified": true,
+          "verdict": "refuted",
           "criterion": {
             "metric": "trajectory_smape",
             "subject": "nemotron-3-ultra-large",
