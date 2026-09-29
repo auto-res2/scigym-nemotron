@@ -815,6 +815,69 @@
               "label": "nemotron-3-ultra large"
             }
           ]
+        },
+        {
+          "key": "small",
+          "caption": "SciGym-small 137 件、最大 20 反復。平均 STE（低いほど良い）、論文 Table 1 の最良行（Gemini-2.5-Pro、0.3212）との差、Reaction Matching Score の F1（modifier なし・あり、高いほど良い）、有効な提出件数、提出までの平均反復数（デバッグ反復を含む）、上限前に自ら提出した件数、文脈長を超えて提出に至らなかった件数。適合率と再現率は記録にある。",
+          "columns": [
+            {
+              "header": "STE $\\downarrow$",
+              "ref_path": "trajectory_smape",
+              "round": 3
+            },
+            {
+              "header": "$\\Delta$ vs Gemini-2.5-Pro",
+              "ref_path": "trajectory_smape",
+              "reference": {
+                "passage": "s1.p5",
+                "values": {
+                  "nemotron-3.5-lightning-small": 0.3212,
+                  "nemotron-3-ultra-small": 0.3212
+                }
+              },
+              "round": 3
+            },
+            {
+              "header": "F1",
+              "ref_path": "reaction_f1",
+              "round": 3
+            },
+            {
+              "header": "F1$_m$",
+              "ref_path": "reaction_f1_with_modifiers",
+              "round": 3
+            },
+            {
+              "header": "n\\_valid",
+              "ref_path": "n_valid_submissions",
+              "round": 0
+            },
+            {
+              "header": "平均反復",
+              "ref_path": "mean_iterations",
+              "round": 1
+            },
+            {
+              "header": "早期提出",
+              "ref_path": "n_early_submit",
+              "round": 0
+            },
+            {
+              "header": "文脈超過",
+              "ref_path": "n_context_overflow",
+              "round": 0
+            }
+          ],
+          "rows": [
+            {
+              "run_id": "nemotron-3.5-lightning-small",
+              "label": "nemotron-3.5-lightning"
+            },
+            {
+              "run_id": "nemotron-3-ultra-small",
+              "label": "nemotron-3-ultra"
+            }
+          ]
         }
       ]
     },
