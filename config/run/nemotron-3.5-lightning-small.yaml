@@ -1,0 +1,4 @@
+model: nvidia/nemotron-3.5-lightning
+split: small
+base_url_file: /data1/rkp00041/nim/rku00122/lightning.url
+context_window: 262144

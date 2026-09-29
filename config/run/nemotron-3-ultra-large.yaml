@@ -1,0 +1,5 @@
+model: nvidia/nemotron-3-ultra-550b-a55b  # 起動後に /v1/models の id に合わせる
+split: large
+base_url_file: /data1/rkp00041/nim/rku00122/ultra.url
+context_window: 262144  # 起動後に /v1/models の max_model_len に合わせる
+workers: 16  # 550B は 4 GPU でも生成が遅い
